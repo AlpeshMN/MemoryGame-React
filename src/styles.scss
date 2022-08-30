@@ -1,0 +1,58 @@
+#root {
+  // Scss variables which we gonna assign using
+  // useState and JavaScript in reactJS
+  $grid-repeat-number: "3";
+}
+
+.memory-game {
+  margin: 20px;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 1rem;
+}
+
+[data-range],
+[data-play-btn] {
+  width: 7rem;
+  margin: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-repeat-number), minmax(100px, 100px));
+  gap: 5px;
+}
+
+.grid-boxes {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: gray;
+  span {
+    display: none;
+  }
+}
+
+/* .gray {
+  background-color: gray;
+} */
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
